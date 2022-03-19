@@ -7,13 +7,16 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/modules -->
 
-<!-- These next instructions are to be written in JavaScript in the <script> tag -->
-<!-- 🐨 Create a div -->
-<!--   💰 document.createElement('div') -->
-
-<!-- 🐨 Set the div's textContent to 'Hello World' and className to 'container' -->
-<!--   💰 div.textContent = '...' -->
-
-<!-- 🐨 Append the div to the root div using `append` -->
-<!--   💰 document.getElementById('root') -->
-<!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+<body>
+  <!-- <div id="root"></div> -->
+  <script type="module">
+    const rootDiv = document.createElement('div')
+    rootDiv.id = 'root'
+    document.body.append(rootDiv)
+    const rootElemnt = document.getElementById('root')
+    const element = document.createElement('div')
+    element.textContent = 'Hello Sushi World'
+    element.className = 'container'
+    rootElemnt.append(element)
+  </script>
+</body>
